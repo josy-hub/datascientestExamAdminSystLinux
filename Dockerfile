@@ -29,6 +29,7 @@ ADD https://raw.githubusercontent.com/hashicorp/vagrant/master/keys/vagrant.pub 
 RUN chmod 600 /home/vagrant/.ssh/authorized_keys; \
     chown -R vagrant:vagrant /home/vagrant/.ssh
 
+
 VOLUME [ "/sys/fs/cgroup" ]
 
 CMD ["/usr/sbin/init"]
